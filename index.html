@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <div class="container">
+      <form class="form-inline" id="city-form">
+        <div class="row">
+          <div class="col-1"></div>
+        <div class="col-5">
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter a city" autofocus="on" autocomplete="off">
+</div>
+<div class="col-1">
+  <button type="submit" class="btn btn-primary mb-2">Search</button>
+  </div>
+  <div class="col-2">
+  <button type="button" class="btn btn-light" id="current-location-button">Current location</button>
+  </div>
+</div>
+</form>
+</br>
+</br>
+        <div class= "row">
+          <div class="col-1"></div>
+        
+          <div class="col-1">
+        <div class="card border-white">
+          <div class="card-body text-center">
+            <p class="card-text fs-1">
+          
+              ☀️
+            </p>
+          </div>
+          </div>
+        </div>
+         <div class="col-3">
+        <div class="card border-white">
+          <div class="card-body">
+            <h1 class="card-title fs-1">
+              <span id="current-temperature">24</span>
+              <a href="#" class="celsius_current_temp" id="celsius-current-temp">°C</a>
+            </br>
+            </br>
+          
+
+            <p class="card-text fs-6">
+              Precipitation : 
+              <span id="current-humidity">70%</span>
+            </br>
+              Wind : <span id="current-wind">10 km/h</span>
+            </p>
+          </div>
+          </div>
+        </div>
+    
+         <div class="col-2">
+        <div class="card border-white">
+          <div class="card-body">
+            <h5 class="card-title fs-6"></br></br><div id="currentCity">Paris</div>
+            </br>
+            <span id="current-description-weather">Clear</span>
+            </br>
+            <div id="currentDate">Fri 20:00 </div>
+            </h5>
+          </div>
+          </div>
+        </div>
+      
+        </div>
+        </br>
+       
+        <div class="card-group">
+        <div class="card border-white text-center">
+          <div class="card-body">
+            <h5 class="card-title">Sat</h5>
+            <p class="card-text fs-2">
+              ☀️
+            </p>
+             <h4 class="card-title">22°C</h4>
+            <p class="card-text">
+              <small class="text-muted">Clear</small>
+            </p>
+          </div>
+        </div>
+        <div class="card border-white text-center">
+          <div class="card-body">
+            <h5 class="card-title">Sun</h5>
+            <p class="card-text fs-2">
+              ☁️
+            </p>
+            <h4 class="card-title">19°C</h4>
+            <p class="card-text">
+              <small class="text-muted">Cloudy</small>
+            </p>
+          </div>
+        </div>
+        <div class="card border-white text-center">
+          <div class="card-body">
+            <h5 class="card-title">Mon</h5>
+            <p class="card-text fs-2">
+              🌧
+            </p>
+            <h4 class="card-title">15°C</h4>
+            <p class="card-text">
+              <small class="text-muted">Rainy</small>
+            </p>
+          </div>
+        </div>
+        <div class="card border-white text-center">
+          <div class="card-body">
+            <h5 class="card-title">Tue</h5>
+            <p class="card-text fs-2">
+              ☀️
+            </p>
+            <h4 class="card-title">17°C</h4>
+            <p class="card-text">
+              <small class="text-muted">Clear</small>
+            </p>
+          </div>
+        </div>
+        <div class="card border-white text-center">
+          <div class="card-body">
+            <h5 class="card-title">Wed</h5>
+            <p class="card-text fs-2">
+              ☁️
+            </p>
+            <h4 class="card-title">20°C</h4>
+            <p class="card-text">
+              <small class="text-muted">Cloudy</small>
+            </p>
+          </div>
+        
+       
+      </div>
+      </div>
+        </div>
+    </div>
+    <script src="javascript.js">
+	</script>
+  </body>
+</html>
